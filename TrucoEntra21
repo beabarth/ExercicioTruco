@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Truco {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		
+    int c1;
+		int c2;
+		int c3;
+
+		System.out.println("Lembrando que AS= 1, Valete = 11, Dama = 12 e Rei = 13");
+		
+		System.out.println("Qual sua primeira carta?");
+		c1 = in.nextInt();
+		
+		System.out.println("Qual sua segunda Carta?");
+		c2 = in.nextInt();
+		
+		System.out.println("Qual sua terceira Carta?");
+		c3 = iny.nextInt();
+
+		if (c1 > 0 && c1 < 4 && c2 > 0 && c2 < 4 && c3 > 0 && c3 < 4) {
+			System.out.println("NOVE");
+		
+		} else if (c1 > 0 && c1 < 4 && c2 > 0 && c2 < 4 || c1 > 0 && c1 < 4 && c3 > 0 && c3 < 4
+				|| c2 > 0 && c2 < 4 && c3 > 0 && c3 < 4) {
+			System.out.println("SEIS");
+		
+		} else if (c1 > 0 && c1 < 4 || c2 > 0 && c2 < 4 || c3 > 0 && c3 < 4) {
+			System.out.println("TRUCO");
+		}
+
+	}
+
+}
